@@ -1,3 +1,4 @@
+import { StudentsComponent } from './students/students.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -18,6 +19,7 @@ import { TeacherComponent } from './teacher/teacher.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,8 @@ import { TeacherComponent } from './teacher/teacher.component';
     CodeComponent,
     RegisterPresentComponent,
     AttendanceComponent,
-    TeacherComponent
+    TeacherComponent,
+    StudentsComponent
   ],
   imports: [
     BrowserModule,

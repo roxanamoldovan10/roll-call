@@ -4,11 +4,11 @@ import { Router } from '@angular/router';
 import { AlertService, UserService, AutentificationServiceService } from '../services/index';
 
 @Component({
-  selector: 'app-teacher',
-  templateUrl: './teacher.component.html',
-  styleUrls: ['./teacher.component.css']
+  selector: 'app-students',
+  templateUrl: './students.component.html',
+  styleUrls: ['./students.component.css']
 })
-export class TeacherComponent implements OnInit {
+export class StudentsComponent implements OnInit {
   model: any = {};
   loading = false;
   added = false;
