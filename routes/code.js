@@ -29,7 +29,7 @@ router.get('/getCode', function(req, res, next) {
  
 // Get rooms
 router.get('/getRooms', function(req, res, next) {
-    db1.rooms.find({email:req.query.email}, function(err, result){
+    db1.rooms.find( function(err, result){
         if(result){
             res.send({result: result});
         } else {

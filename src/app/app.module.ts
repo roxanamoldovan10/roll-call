@@ -14,6 +14,7 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CodeComponent } from './code/code.component';
 import { RegisterPresentComponent } from './register-present/register-present.component';
+import { TeacherComponent } from './teacher/teacher.component';
 
 
 
@@ -25,7 +26,8 @@ import { RegisterPresentComponent } from './register-present/register-present.co
     DashboardComponent,
     CodeComponent,
     RegisterPresentComponent,
-    AttendanceComponent
+    AttendanceComponent,
+    TeacherComponent
   ],
   imports: [
     BrowserModule,
