@@ -8,6 +8,7 @@ import { DashboardComponent } from './../dashboard/dashboard.component';
 import { CodeComponent } from '../code/code.component';
 import { RegisterPresentComponent } from './../register-present/register-present.component';
 import { TeacherComponent } from '../teacher/teacher.component';
+import { StudentsComponent } from '../students/students.component';
 
 const routes: Routes = [
   { path: 'app-login', component: LoginComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'app-register-present', component: RegisterPresentComponent },
   { path: 'app-attendance', component: AttendanceComponent},
   { path: 'app-teacher', component: TeacherComponent},
+  { path: 'app-students', component: StudentsComponent},
 ];
 
 @NgModule({
