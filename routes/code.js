@@ -49,4 +49,15 @@ router.get('/getAttendance', function(req, res, next) {
     });
 });
 
+// Get total attendance
+router.get('/getTotalAttendence', function(req, res, next) {
+    db.code.find(function(err, result){
+        if(result){
+            res.send({result: result});
+        } else {
+            return res.status(400).send(err);
+        }
+    });
+});
+
 module.exports = router;
