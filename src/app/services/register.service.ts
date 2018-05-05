@@ -24,4 +24,10 @@ export class RegisterService {
         .map((res:Response) => 
             res);
     }
+
+    getPresence() {
+        return this.http.get(`http://localhost:3000/reg/presence`)
+        .map((res:Response) => 
+            res);
+    }
 }

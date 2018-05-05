@@ -11,6 +11,7 @@ import { AlertService, UserService, AutentificationServiceService } from '../ser
 export class TeacherComponent implements OnInit {
   model: any = {};
   loading = false;
+  added = false;
 
   constructor(
     private router: Router,
@@ -23,7 +24,7 @@ export class TeacherComponent implements OnInit {
     if(this.model.username && this.model.password) {
       this.authenticationService.addTeacher(this.model.username, this.model.password).subscribe(
         (res:Response)=> {
-          this.router.navigate(['/app-login'])
+          this.added = true;
         }, (error)=> {
           this.alertService.error("Wrong credentials");
         } 
