@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import { RouterModule } from '@angular/router';
-=======
 import { StudentsComponent } from './students/students.component';
->>>>>>> 65bc651bf7f1cdfe15de21a58676c8589324d093
 import { AttendanceComponent } from './attendance/attendance.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
