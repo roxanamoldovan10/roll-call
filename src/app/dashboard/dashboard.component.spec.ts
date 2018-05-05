@@ -1,25 +1,20 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {DashboardComponent} from './dashboard.component';
+   
+   describe('DashboardComponent', () => {
+    beforeEach(function() {
+      this.dash = new DashboardComponent();
+    });
+    var expect = require('chai').expect;
 
-import { DashboardComponent } from './dashboard.component';
+    it('role should be string ', function() {
+        expect(this.dash.role).to.be.a('string');
+    });
+    it('role should be string ', function() {
+      expect(this.dash.role).to.be.a('string');
+    });
 
-describe('DashboardComponent', () => {
-  let component: DashboardComponent;
-  let fixture: ComponentFixture<DashboardComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ DashboardComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(DashboardComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    it('role should be null', function() {
+      this.dash.ngOnInit();
+      expect(this.dash.role).to.be.null;
+    });
+   });

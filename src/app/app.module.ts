@@ -2,7 +2,7 @@ import { RouterModule } from '@angular/router';
 import { StudentsComponent } from './students/students.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 import { HttpModule, Headers } from '@angular/http';
@@ -17,6 +17,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CodeComponent } from './code/code.component';
 import { RegisterPresentComponent } from './register-present/register-present.component';
 import { TeacherComponent } from './teacher/teacher.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 
 
@@ -39,7 +40,8 @@ import { TeacherComponent } from './teacher/teacher.component';
     AppRoutingModule,
     HttpClientModule,
     HttpModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   providers: [
     AlertService,
@@ -48,6 +50,7 @@ import { TeacherComponent } from './teacher/teacher.component';
     RollCallService,
     RegisterService
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

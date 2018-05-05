@@ -13,7 +13,7 @@ import { UserService } from '../services/index';
 export class DashboardComponent implements OnInit {
   type: any
   loggedin: boolean;
-  role: string;
+  role: string = '';
 
   constructor(
     private route: ActivatedRoute,
@@ -27,7 +27,6 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.role = localStorage.getItem('userDetails');
-    this.type = this.UserService.getType();
   }
 
   logout() {

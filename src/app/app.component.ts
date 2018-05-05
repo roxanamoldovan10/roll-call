@@ -7,7 +7,7 @@ import { AutentificationServiceService } from './services/index';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isAuthentificated: boolean;
+  private welcome: string = 'Welcome';
 
   constructor(
     private authenticationService: AutentificationServiceService

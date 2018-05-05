@@ -1,25 +1,22 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {LoginComponent} from './login.component';
+   
+   describe('LoginComponent', () => {
+    beforeEach(function() {
+      this.login = new LoginComponent();
+    });
+    var expect = require('chai').expect;
+    var assert = require('chai').assert;
+   
+    it('loading should be false', function() {
+      expect(this.login.loading).to.be.false;
+    });
 
-import { LoginComponent } from './login.component';
+    it('authentificated should be false', function() {
+        expect(this.login.isAuthenticated).to.be.false;
+        assert.isNotOk(false, 'this will fail');
+      });
 
-describe('LoginComponent', () => {
-  let component: LoginComponent;
-  let fixture: ComponentFixture<LoginComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ LoginComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(LoginComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+      it('authentificated should be defined but should fail', function() {
+        assert.isNotOk(this.login.isAuthenticated, 'this will fail');
+      });
+   });
