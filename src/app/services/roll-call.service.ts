@@ -7,7 +7,7 @@ import { HttpHeaders, HttpClient, HttpParams } from '@angular/common/http';
 
 @Injectable()
 export class RollCallService {
-  code: string;
+  code: string = '';
 
   constructor(private http: HttpClient, 
     private router: Router) { }
