@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -34,7 +35,8 @@ import { TeacherComponent } from './teacher/teacher.component';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpModule
+    HttpModule,
+    RouterModule
   ],
   providers: [
     AlertService,

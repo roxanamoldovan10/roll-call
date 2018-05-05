@@ -9,6 +9,7 @@ import { CodeComponent } from '../code/code.component';
 import { RegisterPresentComponent } from './../register-present/register-present.component';
 import { TeacherComponent } from '../teacher/teacher.component';
 
+
 const routes: Routes = [
   { path: 'app-login', component: LoginComponent },
   { path: 'app-register', component: RegisterComponent },
