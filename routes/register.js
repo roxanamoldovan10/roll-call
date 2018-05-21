@@ -22,7 +22,7 @@ router.post('/register', function(req, res, next) {
         console.log('USER WIFI: ' + userWifi);
 
 
-        if(userWifi !== '' && userWifi === 'c4:e9:84:b5:b4:ca') { // put your wifi mac address
+        if(userWifi !== '' && userWifi === 'c4:e9:84:b5:b4:ca') { // KEA wifi mac address
             db.registered_students.save({user:req.body.user, code: req.body.code}, function(err, result){
                 if(result){
                     res.send({result: result});
